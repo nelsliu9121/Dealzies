@@ -1,0 +1,11 @@
+!!! 5
+%html
+	%head
+		%title Dealzies
+		= stylesheet_link_tag "screen"
+	%body
+		%header= render :partial => "header"
+		%section#main= yield
+		= javascript_include_tag "jquery-1.9.1.min"
+		= javascript_include_tag "modernizr"
+		= javascript_include_tag "app"

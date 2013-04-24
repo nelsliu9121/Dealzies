@@ -1,0 +1,138 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/links";
+@import "compass/utilities/general/clearfix";
+@import "960/grid";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+$ninesixty-columns: 16;
+$ninesixty-grid-width: 1140px;
+
+$application-blue: rgba(0,124,214,1);
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+a {
+	@include unstyled-link();
+	@include link-colors(#6d6d6d, darken($application-blue, 20%));
+	cursor: pointer;
+}
+
+header {
+	@include box-shadow(#7f7f7f 0 -1px 2px inset);
+	background-image: url(/images/binding_light.png);
+	#header_wrapper {
+		@include grid-container();
+		@include clearfix();
+		h1#logo {
+			@include grid(6);
+			font-size: 2em;
+			padding: 22px 0;
+		}
+		nav#main {
+			float: right;
+			a {
+				@include grid(2);
+				@include single-transition(background-color, 0.3s, ease-out);
+				padding: 31px 0;
+				text-align: center;
+				&:hover {
+					background-color: rgba($application-blue, 0.6);
+				}
+			}
+		}
+	}
+}
+
+section#main {
+	@include grid-container();
+	@include clearfix();
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Proposal, Credit */
+div#proposal, div#credit {
+	article {
+		@include clearfix();
+		margin-bottom: 10px;
+		h2 {
+			@include grid(5);
+			@include alpha();
+			text-align: right;
+			margin-top: 10px;
+			color: $application-blue;
+			& + * {
+				@include grid(11);
+				@include omega();
+				padding: 10px 0 10px 19px;
+				border-left: 1px solid #7f7f7f;
+			}
+		}
+	}
+}
+
+/* Demo */
+div#demo {
+	#deals {
+		.deal {
+			@include grid(4);
+			@include border-radius(10px);
+			@include box-shadow(#7f7f7f 0 0 3px);
+			@include transition-property(box-shadow, border-color);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-out);
+			position: relative;
+			border: 1px solid #7f7f7f;
+			height: 100px;
+			overflow: hidden;
+			margin: 5px;
+			h3 {
+				position: absolute;
+				left: 105px;
+				top: 5px;
+			}
+			p {
+				position: absolute;
+				left: 105px;
+				top: 28px;
+				font-size: 0.75em;
+			}
+			span {
+				position: absolute;
+				right: 5px;
+				top: 5px;
+			}
+			&:hover {
+				@include box-shadow($application-blue 0 0 6px);
+				border: 1px solid darken($application-blue, 10%);
+			}
+		}
+	}
+	#saved_deals {
+		@include border-radius(150px);
+		@include box-shadow(lighten($application-blue, 15%) 0 0 3px);
+		@include transition-property(width, height, margin-left, bottom, box-shadow, background-color);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+		background-color: rgba($application-blue, 0.3);
+		border: 1px solid darken($application-blue, 10%);
+		width: 100px;
+		height: 100px;
+		margin-left: -50px;
+		position: fixed;
+		bottom: -50px;
+		left: 50%;
+		&.draganddrop, &:hover {
+			@include box-shadow(lighten($application-blue, 15%) 0 0 30px);
+			background-color: rgba($application-blue, 0.7);
+			width: 300px;
+			height: 300px;
+			margin-left: -150px;
+			bottom: -150px;
+		}
+	}
+}

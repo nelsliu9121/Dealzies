@@ -1,0 +1,281 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* line 17, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/screen.css.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/* line 18, ../sass/screen.css.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #6d6d6d;
+  cursor: pointer;
+}
+/* line 6, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+/* line 24, ../../../../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #004170;
+}
+
+/* line 24, ../sass/screen.css.scss */
+header {
+  -webkit-box-shadow: #7f7f7f 0 -1px 2px inset;
+  -moz-box-shadow: #7f7f7f 0 -1px 2px inset;
+  box-shadow: #7f7f7f 0 -1px 2px inset;
+  background-image: url(/images/binding_light.png);
+}
+/* line 27, ../sass/screen.css.scss */
+header #header_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 30, ../sass/screen.css.scss */
+header #header_wrapper h1#logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 407.5px;
+  font-size: 2em;
+  padding: 22px 0;
+}
+/* line 35, ../sass/screen.css.scss */
+header #header_wrapper nav#main {
+  float: right;
+}
+/* line 37, ../sass/screen.css.scss */
+header #header_wrapper nav#main a {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 122.5px;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  padding: 31px 0;
+  text-align: center;
+}
+/* line 42, ../sass/screen.css.scss */
+header #header_wrapper nav#main a:hover {
+  background-color: rgba(0, 124, 214, 0.6);
+}
+
+/* line 50, ../sass/screen.css.scss */
+section#main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Proposal, Credit */
+/* line 59, ../sass/screen.css.scss */
+div#proposal article, div#credit article {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+/* line 62, ../sass/screen.css.scss */
+div#proposal article h2, div#credit article h2 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 336.25px;
+  margin-left: 0;
+  text-align: right;
+  margin-top: 10px;
+  color: #007cd6;
+}
+/* line 68, ../sass/screen.css.scss */
+div#proposal article h2 + *, div#credit article h2 + * {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 763.75px;
+  margin-right: 0;
+  padding: 10px 0 10px 19px;
+  border-left: 1px solid #7f7f7f;
+}
+
+/* Demo */
+/* line 81, ../sass/screen.css.scss */
+div#demo #deals .deal {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 265px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: #7f7f7f 0 0 3px;
+  -moz-box-shadow: #7f7f7f 0 0 3px;
+  box-shadow: #7f7f7f 0 0 3px;
+  -webkit-transition-property: box-shadow, border-color;
+  -moz-transition-property: box-shadow, border-color;
+  -o-transition-property: box-shadow, border-color;
+  transition-property: box-shadow, border-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  position: relative;
+  border: 1px solid #7f7f7f;
+  height: 100px;
+  overflow: hidden;
+  margin: 5px;
+}
+/* line 93, ../sass/screen.css.scss */
+div#demo #deals .deal h3 {
+  position: absolute;
+  left: 105px;
+  top: 5px;
+}
+/* line 98, ../sass/screen.css.scss */
+div#demo #deals .deal p {
+  position: absolute;
+  left: 105px;
+  top: 28px;
+  font-size: 0.75em;
+}
+/* line 104, ../sass/screen.css.scss */
+div#demo #deals .deal span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+/* line 109, ../sass/screen.css.scss */
+div#demo #deals .deal:hover {
+  -webkit-box-shadow: #007cd6 0 0 6px;
+  -moz-box-shadow: #007cd6 0 0 6px;
+  box-shadow: #007cd6 0 0 6px;
+  border: 1px solid #005ea3;
+}
+/* line 115, ../sass/screen.css.scss */
+div#demo #saved_deals {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  -webkit-box-shadow: #23a3ff 0 0 3px;
+  -moz-box-shadow: #23a3ff 0 0 3px;
+  box-shadow: #23a3ff 0 0 3px;
+  -webkit-transition-property: width, height, margin-left, bottom, box-shadow, background-color;
+  -moz-transition-property: width, height, margin-left, bottom, box-shadow, background-color;
+  -o-transition-property: width, height, margin-left, bottom, box-shadow, background-color;
+  transition-property: width, height, margin-left, bottom, box-shadow, background-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  background-color: rgba(0, 124, 214, 0.3);
+  border: 1px solid #005ea3;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  position: fixed;
+  bottom: -50px;
+  left: 50%;
+}
+/* line 129, ../sass/screen.css.scss */
+div#demo #saved_deals.draganddrop, div#demo #saved_deals:hover {
+  -webkit-box-shadow: #23a3ff 0 0 30px;
+  -moz-box-shadow: #23a3ff 0 0 30px;
+  box-shadow: #23a3ff 0 0 30px;
+  background-color: rgba(0, 124, 214, 0.7);
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  bottom: -150px;
+}

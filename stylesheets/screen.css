@@ -176,9 +176,61 @@ div#proposal article h2 + *, div#credit article h2 + * {
   padding: 10px 0 10px 19px;
   border-left: 1px solid #7f7f7f;
 }
+/* line 77, ../sass/screen.css.scss */
+div#proposal article#developers h2, div#credit article#developers h2 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1120px;
+  text-align: center;
+}
+/* line 81, ../sass/screen.css.scss */
+div#proposal article#developers .developer, div#credit article#developers .developer {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 478.75px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: #7f7f7f 0 1px 1px, rgba(35, 163, 255, 0.3) 0 1px 1px inset;
+  -moz-box-shadow: #7f7f7f 0 1px 1px, rgba(35, 163, 255, 0.3) 0 1px 1px inset;
+  box-shadow: #7f7f7f 0 1px 1px, rgba(35, 163, 255, 0.3) 0 1px 1px inset;
+  -webkit-transition-property: box-shadow, background-color, color, border-color;
+  -moz-transition-property: box-shadow, background-color, color, border-color;
+  -o-transition-property: box-shadow, background-color, color, border-color;
+  transition-property: box-shadow, background-color, color, border-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  background-color: rgba(0, 124, 214, 0.3);
+  color: black;
+  padding: 15px 29px;
+  margin: 15px;
+  border: 1px solid #7f7f7f;
+  text-align: center;
+}
+/* line 94, ../sass/screen.css.scss */
+div#proposal article#developers .developer:hover, div#credit article#developers .developer:hover {
+  -webkit-box-shadow: #7f7f7f 0 3px 3px, #23a3ff 0 1px 3px inset;
+  -moz-box-shadow: #7f7f7f 0 3px 3px, #23a3ff 0 1px 3px inset;
+  box-shadow: #7f7f7f 0 3px 3px, #23a3ff 0 1px 3px inset;
+  background-color: rgba(0, 124, 214, 0.8);
+  color: white;
+  border-color: #007cd6;
+}
 
 /* Demo */
-/* line 81, ../sass/screen.css.scss */
+/* line 107, ../sass/screen.css.scss */
 div#demo #deals .deal {
   display: inline;
   float: left;
@@ -211,33 +263,33 @@ div#demo #deals .deal {
   overflow: hidden;
   margin: 5px;
 }
-/* line 93, ../sass/screen.css.scss */
+/* line 119, ../sass/screen.css.scss */
 div#demo #deals .deal h3 {
   position: absolute;
   left: 105px;
   top: 5px;
 }
-/* line 98, ../sass/screen.css.scss */
+/* line 124, ../sass/screen.css.scss */
 div#demo #deals .deal p {
   position: absolute;
   left: 105px;
   top: 28px;
   font-size: 0.75em;
 }
-/* line 104, ../sass/screen.css.scss */
+/* line 130, ../sass/screen.css.scss */
 div#demo #deals .deal span {
   position: absolute;
   right: 5px;
   top: 5px;
 }
-/* line 109, ../sass/screen.css.scss */
+/* line 135, ../sass/screen.css.scss */
 div#demo #deals .deal:hover {
   -webkit-box-shadow: #007cd6 0 0 6px;
   -moz-box-shadow: #007cd6 0 0 6px;
   box-shadow: #007cd6 0 0 6px;
   border: 1px solid #005ea3;
 }
-/* line 115, ../sass/screen.css.scss */
+/* line 141, ../sass/screen.css.scss */
 div#demo #saved_deals {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -268,7 +320,7 @@ div#demo #saved_deals {
   bottom: -50px;
   left: 50%;
 }
-/* line 129, ../sass/screen.css.scss */
+/* line 155, ../sass/screen.css.scss */
 div#demo #saved_deals.draganddrop, div#demo #saved_deals:hover {
   -webkit-box-shadow: #23a3ff 0 0 30px;
   -moz-box-shadow: #23a3ff 0 0 30px;

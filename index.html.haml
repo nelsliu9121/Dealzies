@@ -4,11 +4,17 @@
 		%p a web app that centralizes all deal websites information, and allows users to store the information locally.
 	%article#desc
 		%h2 description
-		%p Lorem ipsum Minim Ut culpa proident aute id fugiat ex cupidatat commodo in cupidatat ex nulla velit labore esse sed consectetur velit proident enim ad eiusmod consectetur velit ex in veniam irure.
+		%p
+			Dealzies is a web app that gather all the information from deal sites and present them in a cleaner and visually stimulating way.
+			%br/
+			It allows users to save their "watched deals" locally on their machine so their expense preference is safe with them.
+			%br/
+			With single click, it will display the actually deal site in a modal window that enable instant purchase.
 	%article#services
 		%h2 web services
 		%ul
-			%li Amazon Gold Box Deal
+			%li= link_to "Amazon Gold Box Deal", "http://rssfeeds.s3.amazonaws.com/goldbox"
+			%li= link_to "eBay Daily Deals", "http://deals.ebay.com/feeds/rss"
 	%article#features
 		%h2 features
 		%ul

@@ -3,11 +3,18 @@
 		%h2 developers
 		= link_to "Andrew Kaufman", "", :class => "developer"
 		= link_to "Nelson Liu", "http://nelsonliu.co/", :class => "developer"
+	%article#github
+		%h2 repository
+		= link_to "GitHub", "https://github.com/nelsliu9121/Dealzies"
 	%article#tools
 		%h2 tools
 		%ul
-			%li something that we used
+			%li= link_to "960 Grid System", "http://960.gs/"
+			%li= link_to "jQuery", "http://jquery.com/"
+			%li= link_to "Modernizr", "http://modernizr.com/"
+			%li= link_to "Compass", "http://compass-style.org/"
 	%article#webservices
 		%h2 web services
 		%ul
 			%li= link_to "Amazon.com", "http://www.amazon.com/"
+			%li= link_to "eBay.com", "http://www.ebay.com/"

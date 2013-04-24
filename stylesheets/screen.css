@@ -92,7 +92,7 @@ header {
   -webkit-box-shadow: #7f7f7f 0 -1px 2px inset;
   -moz-box-shadow: #7f7f7f 0 -1px 2px inset;
   box-shadow: #7f7f7f 0 -1px 2px inset;
-  background-image: url(/images/binding_light.png);
+  background-image: url(../images/binding_light.png);
 }
 /* line 27, ../sass/screen.css.scss */
 header #header_wrapper {

@@ -3,9 +3,12 @@
 	%head
 		%title Dealzies
 		= stylesheet_link_tag "screen"
+		= javascript_include_tag "jquery-1.9.1.min"
+		= javascript_include_tag "modernizr"
+		= javascript_include_tag "draganddrop"
+		= javascript_include_tag "localstorage"
+		= javascript_include_tag "drawer"
+		= javascript_include_tag "card"
 	%body
 		%header= render :partial => "header"
 		%section#main= yield
-		= javascript_include_tag "jquery-1.9.1.min"
-		= javascript_include_tag "modernizr"
-		= javascript_include_tag "app"

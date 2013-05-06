@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dealzies</title>
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="javascripts/modernizr.js" type="text/javascript"></script>
+    <script src="javascripts/draganddrop.js" type="text/javascript"></script>
+    <script src="javascripts/localstorage.js" type="text/javascript"></script>
+    <script src="javascripts/drawer.js" type="text/javascript"></script>
+    <script src="javascripts/card.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div id='header_wrapper'>
+        <h1 id='logo'><a href="index.html">Dealzies</a></h1>
+        <nav id='main'>
+          <a href="index.html">proposal</a>
+          <a href="demo.html">demo</a>
+          <a href="credit.html">credit</a>
+        </nav>
+      </div>
+    </header>
+    <section id='main'>
+      <div id='demo'>
+        <div id='search'>
+          <!-- %input#search_field{:type => :search, :placeholder => "Search"} -->
+          <!-- %input#search_submit{:type => :submit, :value => "Search"} -->
+          <button id='getADeals' type='button'>Get Amazon Deals</button>
+          <button id='getEDeals' type='button'>Get eBay Deals</button>
+        </div>
+        <div id='cards'>
+          <!-- - 32.times do |index| -->
+          <!-- .card.draggable(draggable="true" id="deal_#{index}") -->
+          <!-- = image_tag "http://placekitten.com/100/100" -->
+          <!-- %h3 some deal -->
+          <!-- %span= index -->
+          <!-- %p Lorem ipsum Dolor fugiat mollit sed laborum Ut. -->
+        </div>
+        <div id='drawers'></div>
+      </div>
+      <script src="javascripts/ajax.js" type="text/javascript"></script>
+      <script src="javascripts/app.js" type="text/javascript"></script>
+    </section>
+  </body>
+</html>

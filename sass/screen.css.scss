@@ -9,6 +9,7 @@ $ninesixty-columns: 16;
 $ninesixty-grid-width: 1140px;
 
 $application-blue: rgba(0,124,214,1);
+$application-gray: #7f7f7f;
 
 html {
 	font-family: 'Open Sans', sans-serif;
@@ -103,62 +104,116 @@ div#proposal, div#credit {
 
 /* Demo */
 div#demo {
-	#deals {
-		.deal {
-			@include grid(4);
-			@include border-radius(10px);
-			@include box-shadow(#7f7f7f 0 0 3px);
-			@include transition-property(box-shadow, border-color);
-			@include transition-duration(0.3s);
-			@include transition-timing-function(ease-out);
-			position: relative;
-			border: 1px solid #7f7f7f;
-			height: 100px;
-			overflow: hidden;
-			margin: 5px;
-			h3 {
-				position: absolute;
-				left: 105px;
-				top: 5px;
+	#search {
+		@include clearfix();
+		margin: 10px auto;
+		padding: 25px 0;
+		input, button {
+			@include border-radius(15px);
+			font-size: 18px;
+			font-weight: 400;
+			padding: 5px 15px;
+			border: 1px solid $application-blue;
+			background-color: white;
+			&:hover, &:focus {
+				@include box-shadow($application-blue 0 0 3px);
+				cursor: pointer;
 			}
-			p {
-				position: absolute;
-				left: 105px;
-				top: 28px;
-				font-size: 0.75em;
-			}
-			span {
-				position: absolute;
-				right: 5px;
-				top: 5px;
-			}
-			&:hover {
-				@include box-shadow($application-blue 0 0 6px);
-				border: 1px solid darken($application-blue, 10%);
+			&:active {
+				@include box-shadow($application-blue 0 0 1px);
 			}
 		}
+		#search_field {
+			@include grid(9);
+			@include grid-push(2);
+		}
+		#search_submit {
+			@include grid(2);
+			@include grid-push(3);
+		}
 	}
-	#saved_deals {
-		@include border-radius(150px);
-		@include box-shadow(lighten($application-blue, 15%) 0 0 3px);
-		@include transition-property(width, height, margin-left, bottom, box-shadow, background-color);
+	.card {
+		@include grid(4);
+		@include border-radius(10px);
+		@include box-shadow($application-gray 0 0 3px);
+		@include transition-property(all);
 		@include transition-duration(0.3s);
 		@include transition-timing-function(ease-out);
-		background-color: rgba($application-blue, 0.3);
-		border: 1px solid darken($application-blue, 10%);
-		width: 100px;
+		border: 1px solid $application-gray;
+		background-color: white;
 		height: 100px;
-		margin-left: -50px;
-		position: fixed;
-		bottom: -50px;
-		left: 50%;
-		&.draganddrop, &:hover {
-			@include box-shadow(lighten($application-blue, 15%) 0 0 30px);
-			background-color: rgba($application-blue, 0.7);
-			width: 300px;
-			height: 300px;
-			margin-left: -150px;
-			bottom: -150px;
+		overflow: hidden;
+		margin: 5px;
+		img {
+			float: left;
+			max-width: 100px;
+		}
+		h3 {
+			display: inline-block;
+		}
+		p {
+			font-size: 0.75em;
+		}
+		&:hover {
+			@include box-shadow($application-blue 0 0 6px);
+			border: 1px solid darken($application-blue, 10%);
+		}
+		&.drag {
+			opacity: 0.4;
 		}
 	}
+	.drawer {
+		@include border-radius(10px);
+		@include box-shadow($application-gray 0 0 3px);
+		@include transition-property(all);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+		@include scale(1/3, 1/3);
+		background-color: rgba($application-blue, 0.3);
+		border: 1px solid darken($application-blue, 10%);
+		width: 300px;
+		height: 300px;
+		position: fixed;
+		bottom: -150px;
+		left: 50%;
+		&.dragover, &:hover, &.drop {
+			@include box-shadow($application-gray 0 0 30px);
+			background-color: rgba($application-blue, 0.5);
+			@include scale(1.0, 1.0);
+			bottom: -20px;
+		}
+		&.drop {
+			background-color: rgba($application-blue, 0.8);
+		}
+	}
+}
+
+.draggable, [draggable] {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+
+  &.drag {
+  	opacity: 0.6;
+  }
+
+  &.dragover {
+		@include box-shadow($application-blue 0 0 6px);
+		border: 1px solid darken($application-blue, 10%);
+  }
+}
+
+.error {
+	@include border-radius(25px);
+	@include box-shadow(lighten(#ff6d6d, 15%) 0 0 3px);
+	@include grid(6);
+	@include grid-push(5);
+	position: absolute;
+	padding: 5px 10px;
+	border: 1px solid #ff6d6d;
+	color: white;
+	background-color: rgba(red, 0.8);
 }

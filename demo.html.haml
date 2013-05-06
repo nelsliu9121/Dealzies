@@ -1,9 +1,16 @@
 #demo
-	#deals
-		- 32.times do
-			.deal
-				= image_tag "http://placekitten.com/100/100"
-				%h3 some deal
-				%span $60
-				%p Lorem ipsum Dolor fugiat mollit sed laborum Ut.
-	#saved_deals
+	#search
+		/ %input#search_field{:type => :search, :placeholder => "Search"}
+		/ %input#search_submit{:type => :submit, :value => "Search"}
+		%button#getADeals{:type => :button} Get Amazon Deals
+		%button#getEDeals{:type => :button} Get eBay Deals
+	#cards
+		/ - 32.times do |index|
+		/ 	.card.draggable(draggable="true" id="deal_#{index}")
+		/ 		= image_tag "http://placekitten.com/100/100"
+		/ 		%h3 some deal
+		/ 		%span= index
+		/ 		%p Lorem ipsum Dolor fugiat mollit sed laborum Ut.
+	#drawers
+= javascript_include_tag "ajax"
+= javascript_include_tag "app"
